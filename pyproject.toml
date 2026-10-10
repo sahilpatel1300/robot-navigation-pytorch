@@ -1,0 +1,23 @@
+[project]
+name = "robot-navigation-pytorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sahil", email = "sahilp.patel1300@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+robot-navigation-pytorch = "robot_navigation_pytorch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
